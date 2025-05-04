@@ -84,7 +84,8 @@ h6 {
      -moz-box-sizing: border-box;
      box-sizing: border-box;
 }
-.read_more{
+
+.read_more {
      display: none;
 }
 
@@ -95,7 +96,7 @@ h4 a,
 h5 a,
 h6 a {
      color: #212121;
-     text-decoration: none!important;
+     text-decoration: none !important;
      opacity: 1
 }
 
@@ -141,7 +142,7 @@ img {
      height: auto;
 }
 
- :focus {
+:focus {
      outline: 0;
 }
 
@@ -215,6 +216,10 @@ button {
      max-width: 1170px;
 }
 
+
+.mobile-bottom-nav {
+     display: none;
+}
 
 /*---------------------------- preloader area ----------------------------*/
 
@@ -483,6 +488,10 @@ ul.email li img {
      width: 100%;
 }
 
+
+.checked {
+     color: orange;
+}
 
 /** end about **/
 
@@ -956,6 +965,51 @@ ul.re_post li {
 
 .padddd {
      padding-right: 0;
+}
+
+.mobile-bottom-nav {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+     background: white;
+     border-top: 1px solid #ccc;
+     padding: 10px 0;
+     z-index: 1000;
+}
+
+.mobile-bottom-nav a {
+     color: #333;
+     text-decoration: none;
+     font-size: 20px;
+}
+
+.mobile-bottom-nav {
+     display: none;
+}
+
+@media (max-width: 768px) {
+     .mobile-bottom-nav {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          background: white;
+          border-top: 1px solid #ccc;
+          padding: 10px 0;
+          z-index: 1000;
+          
+     }
+
+     .mobile-bottom-nav a {
+          color: #333;
+          text-decoration: none;
+          font-size: 20px;
+     }
 }
 
 
