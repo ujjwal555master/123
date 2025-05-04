@@ -990,6 +990,32 @@ ul.re_post li {
      display: none;
 }
 
+.rating-slider {
+     overflow-x: auto;
+     scroll-snap-type: x mandatory;
+     display: flex;
+     -webkit-overflow-scrolling: touch;
+     padding: 20px 10px;
+   }
+   
+   .slider-track {
+     display: flex;
+     gap: 20px;
+   }
+   
+   .rating-card {
+     flex: 0 0 auto;
+     scroll-snap-align: center;
+     background: #fff;
+     padding: 16px;
+     border-radius: 12px;
+     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+     min-width: 320px;
+     max-width: 320px;
+     text-align: center;
+   }
+   
+
 @media (max-width: 768px) {
      .mobile-bottom-nav {
           display: flex;
